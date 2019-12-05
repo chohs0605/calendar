@@ -1,0 +1,135 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!-- 89f08256c47acaebcb88192c3814f03bcbe87a6e -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holidays Calendar</title> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="https://cdn.glitch.com/d993a853-abb1-4ebe-b71f-fe38a4c50427%2Ffavicon.ico?v=1575057091230" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="grid-container">
+    
+<div class="header">
+  <div id="title">
+    <h1 >Holidays Calendar</h1>
+  </div>
+</div>
+<div class="middle">  
+  <div id="addDialogContainer">
+    <div class="dialog">
+      <div class="dialog-title">Choose a Country and a year</div>
+        <div class="dialog-body">
+          <select id="selectCity" aria-label="City to add">
+            <option value="kr">South Korea</option>
+            <option value="ca">Canada</option>
+            <option value="cn">China</option>
+            <option value="hk">HongKong</option>
+            <option value="be">Belgium</option>
+            <option value="br">Brazil</option>
+            <option value="cl">Chile</option>
+            <option value="fr">France</option>
+            <option value="de">Germany</option>
+            <option value="ie">Ireland</option>
+            <option value="th">Thailand</option>
+            <option value="us">United States</option>
+            <option value="gb">United Kingdom</option>
+            <option value="vn">Vietnam</option>
+            <option value="ru">Russia</option>
+          </select>
+          <select id="selectYear" aria-label="Year to add">
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+          </select>
+       </div>
+    <div class="dialog-buttons">
+      <button id="butDialogAdd" onclick="changeCountry(0)">Add</button>
+    </div>
+  </div>
+</div>
+</div>
+ 
+
+  <div class="january">
+   <div class="button" onclick="changeCountry(1)">
+    <p>January</p>
+    </div>
+  </div>
+  <div class="february">
+   <div class="button" onclick="changeCountry(2)">
+    <p>February</p> 
+   </div>
+  </div>
+  <div class="march">
+   <div class="button" onclick="changeCountry(3)">
+    <p>March</p>  
+   </div>
+  </div>
+  <div class="april">
+   <div class="button" onclick="changeCountry(4)">
+    <p>April</p>
+   </div>
+  </div>
+  <div class="may">
+   <div class="button" onclick="changeCountry(5)">
+    <p>May</p>
+   </div>
+  </div>
+  <div class="june">
+   <div class="button" onclick="changeCountry(6)">
+    <p>June</p>
+   </div>
+  </div>
+  <div class="july">
+   <div class="button" onclick="changeCountry(7)">
+    <p>July</p>
+   </div>
+  </div>
+  <div class="august">
+   <div class="button" onclick="changeCountry(8)">
+    <p>August</p>
+   </div>
+  </div>
+  <div class="september">
+   <div class="button" onclick="changeCountry(9)">
+    <p>September</p>
+   </div>
+  </div>
+  <div class="october">
+   <div class="button" onclick="changeCountry(10)">
+    <p>October</p>
+   </div>
+  </div>
+  <div class="december">
+   <div class="button" onclick="changeCountry(11)">
+    <p>November</p>
+   </div>
+  </div>
+  <div class="november">
+   <div class="button" onclick="changeCountry(12)">
+    <p>December</p>
+   </div>
+  </div>
+ 
+   <div id="content">
+   </div>
+  </div>
+  
+    <div class="goUpButton">
+     <a href="#title">
+      <img src="https://cdn.glitch.com/d993a853-abb1-4ebe-b71f-fe38a4c50427%2FUIHere%20(2).png?v=1575320594323" alt="goUpButton">
+     </a>
+    </div>
+   
+  <script src="client.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  background-image: url("https://cdn.glitch.com/d993a853-abb1-4ebe-b71f-fe38a4c50427%2Fimages.jpg?v=1575319706309");
+}
+
+#title {
+  text-align:center;
+  font-size:2em;
+  color:white;
+}
+
+#selectCity {
+ margin:12px;
+}
+#addDialogContainer{
+  color:white;
+  font-size:1.8em;
+}
+.middle{
+  text-align: center;
+  margin-bottom:1em;
+}
+.dialog-title{
+  padding:12px;
+}
+#content{
+  text-align:center;
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'middle middle middle middle middle middle' 
+    'january february march april may june'
+    'july august september october december november'
+    'data data data data data data';
+    
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+  
+}
+
+.january,
+.february,
+.march,
+.april,
+.may,
+.june,
+.july,
+.august,
+.september,
+.october,
+.december,
+.november{
+  
+  display:grid;
+  align-items: center;
+  justify-items:center;
+}
+.header{
+  grid-area: header;
+}
+.middle {
+  grid-area: middle;
+}
+.button {
+  line-height: 100px;
+  height: 100px;
+  width:100px;
+  border: 3px solid black;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  margin-bottom:1em;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color:white;
+  color:black;
+}
+.button p{
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+.button:hover {
+  background-color: black; /* Green */
+  color: white;
+}
+.january{
+  grid-area: january;
+  font-size:1.2em;
+}
+.february{
+  grid-area: february;
+  font-size:1.2em;
+}
+.march{
+  font-size:1.2em;
+  grid-area: march;
+}
+.april{
+  font-size:1.2em;
+  grid-area: april;
+}
+.may{
+  font-size:1.2em;
+  grid-area: may;
+}
+.june{
+  font-size:1.2em;
+  grid-area: june;
+}
+.july{
+  font-size:1.2em;
+  grid-area: july;
+}
+.august{
+  font-size:1.2em;
+  grid-area: august;
+}
+.september{
+  font-size:1.1em;
+  grid-area: september;
+}
+.october{
+  font-size:1.2em;
+  grid-area: october
+}
+.december{
+  font-size:1.1em;
+  grid-area: december;
+}
+.november{
+  font-size:1.15em;
+  grid-area: november;
+}
+#content{
+  color:white;
+  grid-area: data;
+  font-size:1.2em;
+}
+
+/* Style the footer */
+.goUpButton {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom:0px;
+  right:0px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color:black;
+}
+
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 800px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'middle middle middle middle middle middle' 
+      'january january january february february february' 
+      'march march march april april april'
+      'may may may june june june'
+      'july july july august august august'
+      'september september september october october october'
+      'december december december november november november'
+      'data data data data data data';
+      
+  }
+}
